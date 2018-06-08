@@ -1,5 +1,6 @@
 package io.hexlet.xo.model;
 
+import io.hexlet.xo.model.exceptions.AbstractXOException;
 import org.junit.Test;
 
 import java.awt.*;
@@ -21,7 +22,7 @@ public class FieldTest {
     }
 
     @Test
-    public void setFigure() {
+    public void setFigure() throws AbstractXOException {
 
         final Field field = new Field();
 
