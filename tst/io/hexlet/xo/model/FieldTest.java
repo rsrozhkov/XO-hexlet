@@ -14,7 +14,7 @@ public class FieldTest {
     @Test
     public void getSize() {
 
-        final Field field = new Field();
+        final Field field = new Field(3);
 
         assertEquals(3, field.getSize());
     }
@@ -22,7 +22,7 @@ public class FieldTest {
     @Test
     public void setFigure() throws Exception {
 
-        final Field field = new Field();
+        final Field field = new Field(3);
 
         final Point inputPoint = new Point(0,0);
 
@@ -38,7 +38,7 @@ public class FieldTest {
     @Test
     public void getFigureWhenFigureIsNotSet() throws Exception {
 
-        final Field field = new Field();
+        final Field field = new Field(3);
 
         final Point inputPoint = new Point(0,0);
 
@@ -50,7 +50,7 @@ public class FieldTest {
     @Test
     public void getFigureWhenXIsLessThenZero() throws Exception {
 
-        final Field field = new Field();
+        final Field field = new Field(3);
 
         final Point inputPoint = new Point(-1,0);
 
@@ -63,7 +63,7 @@ public class FieldTest {
     @Test
     public void getFigureWhenYIsLessThenZero() throws Exception {
 
-        final Field field = new Field();
+        final Field field = new Field(3);
 
         final Point inputPoint = new Point(0,-1);
 
@@ -76,7 +76,7 @@ public class FieldTest {
     @Test
     public void getFigureWhenXIsMoreThenSize() throws Exception {
 
-        final Field field = new Field();
+        final Field field = new Field(3);
 
         final Point inputPoint = new Point(field.getSize()+1,0);
 
@@ -89,7 +89,7 @@ public class FieldTest {
     @Test
     public void getFigureWhenYIsMoreThenSize() throws Exception {
 
-        final Field field = new Field();
+        final Field field = new Field(3);
 
         final Point inputPoint = new Point(0,field.getSize()+1);
 
